@@ -34,7 +34,6 @@ function resta(){
     }
     else{
         p1.innerHTML=numero1;
-        document.getElementById('resultado').value="",
         document.getElementById('audio').play();
         flag=false;
     }
