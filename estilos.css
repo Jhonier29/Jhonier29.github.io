@@ -23,6 +23,13 @@ body {
     padding: 20px;
     
 }
+.contenedor2{
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px;
+
+    text-align: center;
+}
 
 form p{
     text-align: center;
@@ -49,4 +56,10 @@ form .btn {
     display: inline-block;
     text-decoration: none;
     margin-bottom: 16px;
+}
+span {
+
+    height: 100vh;
+    font-size: 20vw;
+    color: rgb(175, 36, 36);
 }

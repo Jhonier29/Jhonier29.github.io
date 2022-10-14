@@ -30,11 +30,14 @@ function resta(){
         Pnumero1 = resultado;
         p1.innerHTML=Pnumero1;
         document.getElementById('resultado').value="",
+        totalTime = 7;
         flag=true;
     }
     else{
         p1.innerHTML=numero1;
+        document.getElementById('resultado').value="",
         document.getElementById('audio').play();
+        totalTime = 7;
         flag=false;
     }
 }
@@ -43,11 +46,27 @@ document.addEventListener("keyup", function(e) {
             resta();
         }
     });
-document
-function Enter(e) {
-    console.log(e.Code)
-}
+
 
 function recargar(){
     window.location=document.location.href
+}
+
+
+var totalTime = 7;
+
+function updateClock() {
+  document.getElementById('countdown').innerHTML = totalTime;
+  var numero1 = parseFloat(document.getElementById('numero1').value);
+  if(totalTime==0){
+        p1.innerHTML=numero1;
+        document.getElementById('resultado').value="",
+        document.getElementById('audio').play();
+        totalTime = 7;
+        flag=false;
+        updateClock();
+  }else{
+    totalTime-=1;
+    setTimeout("updateClock()",1000);
+  }
 }
