@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test matematico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" autocomplete="off">
+            <input type="text" id="numero1">
+            <p id="mostrar1"></p>
+            <p>-</p>
+            <input type="text" id="numero2">
+            <p id="mostrar2"></p>
+            <p>=</p>
+            <input type="text" id="resultado" onkeyup="Enter()">
+            <input type="button" id="button" onclick="resta()" class="btn" value="Comprobar">
+            <input type="button" onclick="recargar()" class="btn" value="Reiniciar">
+        </form>
+        
+        <audio id="audio">
+            <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3" 
+            type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="Calcular.js"></script>
+</body>
+</html>
